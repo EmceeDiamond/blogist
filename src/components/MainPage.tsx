@@ -8,7 +8,7 @@ const MainPage: FC<{users: Users[]}> = ({users}) => {
     return(
         <div>
             <h1>Blogist</h1>
-            <button onClick={() => setDataStatus(!dataStatus)}>{dataStatus ? "Likes" : "All"}</button>
+            <button onClick={() => setDataStatus(!dataStatus)}>{dataStatus ? "All" : "Likes"}</button>
             <UsersList users={users} status={dataStatus}/>
         </div>
         
