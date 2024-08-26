@@ -1,0 +1,150 @@
+*{
+    font-size: 16px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+  }
+  
+.grid {
+      display: grid;
+      grid-template-columns: repeat(5, 300px);
+      grid-template-rows: repeat(6, 500px);
+      
+    } 
+  
+.grid > * {
+      overflow: auto;
+      background-color: #f6decd;
+      text-align: center;
+      border: 3px solid #f0af80;
+      border-radius: 5px;
+      margin: 10px;
+}
+
+.customers-img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 25px;
+    float: left; 
+}
+
+.ighh{
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.heart {
+    margin-right: 100px;
+    cursor: pointer;
+    float: left;
+    width: 40px; 
+    height: 40px; 
+    background-color: rgb(255, 255, 255); 
+    transform: rotate(45deg);
+    border:0px;
+}
+
+.heart::before,
+.heart::after {
+    content : ''; 
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%; 
+    position: absolute;
+}
+
+.heart::before {
+    top: -20px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: -20px;
+}
+
+.heart_active {
+    margin-right: 100px;
+    cursor: pointer;
+    float: left;
+    width: 40px; 
+    height: 40px; 
+    background-color: rgb(255, 0, 0); 
+    transform: rotate(45deg);
+    border:0px;
+}
+
+.heart_active::before,
+.heart_active::after {
+    content : ''; 
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%; 
+    position: absolute;
+}
+
+.heart_active::before {
+    top: -20px;
+    left: 0;
+}
+
+.heart_active::after {
+    top: 0;
+    left: -20px;
+}
+
+.btn_Del{
+    width: 50px;
+    height: 50px;
+    background: url("file:///D:/MatLab/trash.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-style: none;
+    cursor: pointer;
+    float: right;
+    box-sizing: border-box;
+    margin-right: 10px;
+  }
+
+  .box{
+    display: block;
+    position: relative;
+    border: solid 2px black;
+    border-radius: 20px;
+    width: 50vw;
+    height: 90vh;
+    margin: auto;
+    background-color: white;
+    min-width: 400px;
+
+  }
+
+  .img-inf{
+    margin-top: 5vh;
+    margin-left: 33%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .txt-inf{
+    justify-content: center;
+    margin: auto;
+    margin-left: 33%;
+    word-wrap: break-word;
+  }
+
+  .back-inf{
+    display: flex;
+    width: 100%;
+  }
+
+  body{
+    background: linear-gradient(to left,#00364f ,#01a4a6 );
+  }
