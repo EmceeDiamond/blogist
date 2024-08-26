@@ -5,6 +5,7 @@ import {
   Routes,
   Route 
 } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom';
 import MainPage from './components/MainPage';
 import UserInformation from './components/UserInformation';
 import { useSelector } from 'react-redux';
@@ -21,12 +22,12 @@ function App() {
   }, [data])
   
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<MainPage users={users}/>}/>
         <Route path='/user/:id' element={<UserInformation users={users}/>}/>
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
